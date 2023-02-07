@@ -8,6 +8,8 @@ public class CommitTestController {
 
     @GetMapping("/test")
     public String test(){
+        System.out.println("TTT");
         return "Hello Java";
+
     }
 }
