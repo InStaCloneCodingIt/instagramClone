@@ -27,7 +27,7 @@ public class Lab {
     // git push // 안될수도있어요 누가 올렸을때
     // git pull //
     // git push //
-
+    // git log --branches --not --remotes
     
 
 }
