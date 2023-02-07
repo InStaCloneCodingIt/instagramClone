@@ -22,4 +22,12 @@ public class Lab {
         return new ResponseEntity<>(map, HttpStatus.OK);
     }
 
+    // git add . : 커밋전에 스테이지 올리기
+    // git commit -m '커밋메시지'
+    // git push // 안될수도있어요 누가 올렸을때
+    // git pull //
+    // git push //
+    // git log --branches --not --remotes
+    
+
 }
