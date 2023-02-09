@@ -73,6 +73,13 @@
 		</plugins>
 	</build>
 
+<!--	<dependency>-->
+<!--		<groupId>org.projectlombok</groupId>-->
+<!--		<artifactId>lombok</artifactId>-->
+<!--		<version>1.18.20</version>-->
+<!--		<scope>provided</scope>-->
+
+<!--	</dependency>-->
 
 	<!-- https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter -->
 	<!-- String Boot 용 Mybatis -->
@@ -90,12 +97,19 @@
 		<version>8.0.32</version>
 	</dependency>
 
+	<!-- https://mvnrepository.com/artifact/org.bgee.log4jdbc-log4j2/log4jdbc-log4j2-jdbc4 -->
+	<!-- Log4jdbc-log4j2 라이브러리 추가 -->
+	<dependency>
+		<groupId>org.bgee.log4jdbc-log4j2</groupId>
+		<artifactId>log4jdbc-log4j2-jdbc4</artifactId>
+		<version>1.16</version>
+	</dependency>
+
+
 	<!--DB연결 테스트용 ? -->
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-test</artifactId>
 		<scope>test</scope>
 	</dependency>
-
-
 </project>
