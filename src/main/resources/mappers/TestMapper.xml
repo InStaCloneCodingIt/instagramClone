@@ -3,6 +3,14 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper>
-
+<mapper namespace="org/insta/application/app/mapper/MemberMapper">
+    <select id="findById" resultType="MemberDto" parameterType="Integer">
+        select  id,
+                name,
+                age,
+                ADDR as address,
+                PHONE_NUMBER as phoneNumber
+        from member
+        order by id desc;
+    </select>
 </mapper>
