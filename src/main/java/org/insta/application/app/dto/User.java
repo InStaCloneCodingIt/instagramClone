@@ -3,8 +3,6 @@ package org.insta.application.app.dto;
 import lombok.*;
 import org.insta.application.app.util.Gender;
 
-import java.time.LocalDateTime;
-
 @Getter
 @Setter
 @ToString
@@ -18,7 +16,7 @@ public class User {
     private String password;
     private String phone;
     private Gender gender;
-    private LocalDateTime birth;
+    private String birth;
     private String name;
     private String nickname;
     private String website;
@@ -26,7 +24,8 @@ public class User {
     private String profileImage;
 
     @Builder
-    public User(int userId, String email, String password, String phone, Gender gender, LocalDateTime birth, String name, String nickname, String website, String introduce, String profileImage) {
+
+    public User(int userId, String email, String password, String phone, Gender gender, String birth, String name, String nickname, String website, String introduce, String profileImage) {
         this.userId = userId;
         this.email = email;
         this.password = password;
