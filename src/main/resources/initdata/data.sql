@@ -1,0 +1,2 @@
+insert into user (email, password, phone, gender, birth, name, nickname, website, introduce, profile_img)
+values ('jyyoun1021@gmail.com','1111','01084912891','남자','19961022','윤재열','codej','www.naver.com','test용도입니다.','test.png');

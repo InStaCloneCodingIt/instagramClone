@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.insta.application.app.mapper.UserMapper">
+    <select id="findById" resultType="User" >
+            select
+                email ,
+                phone ,
+                gender,
+                birth,
+                name,
+                nickname,
+                website,
+                introduce,
+                profile_img as profileImage
+            from
+                user
+            where
+                user_id = #{id}
+    </select>
+</mapper>
